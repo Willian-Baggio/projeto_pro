@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot PRO</title>
+</head>
+<body>
+    <form action="/generate" method="post">
+        <textarea name="prompt" placeholder="Message..."></textarea>
+        <button type="submit">Generate</button>
+    </form>
+    {% if response %}
+    <div>
+        <p>{{ response }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
